@@ -1,4 +1,4 @@
-n<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Animation Page</title>
@@ -23,8 +23,6 @@ n<!DOCTYPE html>
                 height: 50px;
                 position: absolute;
             }
-
-
         </style>
         <script>
 
@@ -50,18 +48,29 @@ n<!DOCTYPE html>
                 }
             }
         </script>
+        <script src="test.js" defer></script>
     </head>
     <body>
-        <h1>Welcome to My Site</h1>
+        <h1 style="text-align:center;">Welcome to My Site</h1>
         <div id="container">
             <div id="animation"></div>
         </div>
-        <button type="button" onclick="myMove()">Click Me!</button>
+        <br>
+        <button type="button" onclick="myMove()">Click for Move</button>
+        <section>
+            <form action="action.php" name="frm1" onsubmit="return validateForm()">
+                <label for="fNAME">First Name:</label>
+                <input type="text" name="fname" id="fNAME"><br><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
         <section>
             <!-- the section is for test -->
         </section>
+        
         <footer>
             <p>Author: Sepide</p>
         </footer>
+        
     </body>
 </html>

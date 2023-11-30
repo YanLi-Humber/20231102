@@ -20,6 +20,37 @@ function myFun(){
 
   let car = ["Toyota", "Fiat", "Volvo", "Jeep"];
 
+const person = {
 
-  
+        firstName: "John",
+        height: 175,
+        age: function(){
 
+          return 2023 - this.yearOfBirth;
+        }
+}
+  function validateForm(){
+
+        let fname = document.forms["frm1"]["fname"].value;
+         if (fname ==""){
+          alert("The first Name should not be empty!");
+          return false;
+         }
+  }
+
+
+  // document.getElementById("test").onclick = function(){
+
+  //   document.getElementsByName("p")[0].innerHTML = "Hello JavaScript!";
+
+  // }
+
+  // const elem = document.getElementsByClassName("intro");
+
+  // document.getElementById("test1").innerHTML = elem[0].innerHTML;
+
+  // const elem1 = document.getElementsByName("p");
+  // elem1[1].style.color = "red";
+
+
+ 
